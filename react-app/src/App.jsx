@@ -15,9 +15,9 @@ export default class App extends React.Component {
       <>
         <div className="card">
           <Parent>
-            <Child name="Tim">child content text</Child>
-            <Child name="John" parent={this}></Child>
-            <Child name="Meg"></Child>
+            <Child name="Tim" parent={this}>child content text</Child>
+            <Child name="John" parent={this}>child content text</Child>
+            <Child name="Meg" parent={this}>child content text</Child>
             <p>paragraph content</p>
             parent content text
           </Parent>
