@@ -1,5 +1,9 @@
 import React from "react";
 export default class Child extends React.Component {
+    state = {
+        name: ""
+    }
+
     handleButtonClick = me => {
         this.props.onHungry(me)
     }
@@ -17,5 +21,7 @@ export default class Child extends React.Component {
 
     componentDidMount() {
         console.log('Child props', this.props)
+
+        this.setState({name: this.props.name})
     }
 }

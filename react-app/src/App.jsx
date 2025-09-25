@@ -11,8 +11,7 @@ export default class App extends React.Component {
   }
 
   handleChildHungry = child => {
-    console.log('handleChildHungry child, name', child, child.props.name)
-    // Why props and not state.name is Tim?
+    console.log('handleChildHungry child, name', child, child.state.name)
   }
 
   render() {
